@@ -1,0 +1,44 @@
+[
+{
+    "name": "wood",
+    "step_amount": 0.1,
+    "max_productivity_per_labor": 20,
+    "max_productivity_per_land": 2,
+    "max_productivity_per_input_good": {
+        "axe": 10
+    },
+    "production_function": "min(labor, land, axe)"
+},
+{
+    "name": "stone",
+    "step_amount": 0.1,
+    "max_productivity_per_labor": 10,
+    "max_productivity_per_land": 1,
+    "max_productivity_per_input_good": {
+        "hammer": 3
+    },
+    "production_function": "min(labor, land, hammer)"
+},
+{
+    "name": "axe",
+    "step_amount": 1,
+    "max_productivity_per_labor": 3,
+    "max_productivity_per_land": 10,
+    "max_productivity_per_input_good": {
+        "wood": 25,
+        "stone": 100
+    },
+    "production_function": "min(labor, land, wood, stone)"
+},
+{
+    "name": "hammer",
+    "step_amount": 1,
+    "max_productivity_per_labor": 5,
+    "max_productivity_per_land": 10,
+    "max_productivity_per_input_good": {
+        "wood": 25,
+        "stone": 100
+    },
+    "production_function": "min(labor, land, wood, stone)"
+}
+]
