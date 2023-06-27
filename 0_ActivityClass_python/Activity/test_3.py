@@ -6,7 +6,7 @@ labor = 10
 land = 20
 stocks = [{"wood": 100, "stone": 50, "axe": 0, "hammer": 0}]
 
-# Create two instances of the Activity class
+# Create instances of the Activity class
 mining_stone = Activity.Activity("stone")
 woodcutting = Activity.Activity("wood")
 toolMaking_axe = Activity.Activity("axe")

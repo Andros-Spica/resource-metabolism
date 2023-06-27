@@ -1,0 +1,12 @@
+digraph "packages" {
+rankdir=BT
+charset="utf-8"
+"Activity" [color="black", label=<Activity>, shape="box", style="solid"];
+"Activity.Activity" [color="black", label=<Activity.Activity>, shape="box", style="solid"];
+"Activity.test_1" [color="black", label=<Activity.test_1>, shape="box", style="solid"];
+"Activity.test_2" [color="black", label=<Activity.test_2>, shape="box", style="solid"];
+"Activity.test_3" [color="black", label=<Activity.test_3>, shape="box", style="solid"];
+"Activity.test_1" -> "Activity.Activity" [arrowhead="open", arrowtail="none"];
+"Activity.test_2" -> "Activity.Activity" [arrowhead="open", arrowtail="none"];
+"Activity.test_3" -> "Activity.Activity" [arrowhead="open", arrowtail="none"];
+}

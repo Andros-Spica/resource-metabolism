@@ -1,0 +1,5 @@
+digraph "classes" {
+rankdir=BT
+charset="utf-8"
+"Activity.Activity.Activity" [color="black", fontcolor="black", label=<{Activity|input_step_amounts : dict<br ALIGN="LEFT"/>input_types<br ALIGN="LEFT"/>max_productivity_per_input_good<br ALIGN="LEFT"/>max_productivity_per_labor<br ALIGN="LEFT"/>max_productivity_per_land<br ALIGN="LEFT"/>output_step_amount<br ALIGN="LEFT"/>output_type<br ALIGN="LEFT"/>production_function<br ALIGN="LEFT"/>|calculate_max_output(production_formula, inputs)<br ALIGN="LEFT"/>get_input_step_amounts()<br ALIGN="LEFT"/>get_input_types()<br ALIGN="LEFT"/>perform(labor, land, available_input_goods, verbose)<br ALIGN="LEFT"/>print_configuration()<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+}
