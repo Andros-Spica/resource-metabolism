@@ -240,11 +240,11 @@ NIL
 1
 
 PLOT
-666
-17
-866
-167
-Stocks
+663
+10
+929
+160
+Stocks (total)
 NIL
 NIL
 0.0
@@ -258,6 +258,46 @@ PENS
 "food" 1.0 0 -14439633 true "" "plot sum [item 0 hh_stocks] of households"
 "resources1" 1.0 0 -8431303 true "" "plot sum [item 1 hh_stocks] of households"
 "resources2" 1.0 0 -14070903 true "" "plot sum [item 2 hh_stocks] of households"
+
+PLOT
+663
+160
+929
+296
+Stocks (activity 1 focused)
+NIL
+NIL
+0.0
+10.0
+0.0
+10.0
+true
+true
+"" ""
+PENS
+"food" 1.0 0 -14439633 true "" "plot sum [item 0 hh_stocks] of households with [item 0 (modes hh_activity-profile) = 1 ]"
+"resources1" 1.0 0 -8431303 true "" "plot sum [item 1 hh_stocks] of households with [item 0 (modes hh_activity-profile) = 1 ]"
+"resources2" 1.0 0 -14070903 true "" "plot sum [item 2 hh_stocks] of households with [item 0 (modes hh_activity-profile) = 1 ]"
+
+PLOT
+663
+295
+929
+427
+Stocks (activity 2 focused)
+NIL
+NIL
+0.0
+10.0
+0.0
+10.0
+true
+true
+"" ""
+PENS
+"food" 1.0 0 -14439633 true "" "plot sum [item 0 hh_stocks] of households with [item 0 (modes hh_activity-profile) = 2 ]"
+"resources1" 1.0 0 -8431303 true "" "plot sum [item 1 hh_stocks] of households with [item 0 (modes hh_activity-profile) = 2 ]"
+"resources2" 1.0 0 -14070903 true "" "plot sum [item 2 hh_stocks] of households with [item 0 (modes hh_activity-profile) = 2 ]"
 
 INPUTBOX
 21

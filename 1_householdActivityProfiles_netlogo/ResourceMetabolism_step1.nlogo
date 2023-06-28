@@ -54,17 +54,17 @@ end
 to hh_produce
 
   ;;; subtract the necessary production input and add the resulting output of each element in stocks
-  ;;; per each activity expressed by the UI parameters "production1-input", "production1-output", "production2-input", "production2-output"
+  ;;; per each activity expressed by the UI parameters "activity1-input", "activity1-output", "activity2-input", "activity2-output"
 
-  ;;; production 1
-  set hh_stocks (map [ [ stocks productionInput ] -> stocks - productionInput ] hh_stocks (read-string-list production1-input))
+  ;;; activity 1
+  set hh_stocks (map [ [ stocks productionInput ] -> stocks - productionInput ] hh_stocks (read-string-list activity1-input))
 
-  set hh_stocks (map [ [ stocks productionOutput ] -> stocks + productionOutput ] hh_stocks (read-string-list production1-output))
+  set hh_stocks (map [ [ stocks productionOutput ] -> stocks + productionOutput ] hh_stocks (read-string-list activity1-output))
 
-  ;;; production 2
-  set hh_stocks (map [ [ stocks productionInput ] -> stocks - productionInput ] hh_stocks (read-string-list production2-input))
+  ;;; activity 2
+  set hh_stocks (map [ [ stocks productionInput ] -> stocks - productionInput ] hh_stocks (read-string-list activity2-input))
 
-  set hh_stocks (map [ [ stocks productionOutput ] -> stocks + productionOutput ] hh_stocks (read-string-list production2-output))
+  set hh_stocks (map [ [ stocks productionOutput ] -> stocks + productionOutput ] hh_stocks (read-string-list activity2-output))
 
 end
 
@@ -106,7 +106,7 @@ INPUTBOX
 182
 873
 242
-production1-output
+activity1-output
 10 5 2
 1
 0
@@ -145,7 +145,7 @@ INPUTBOX
 182
 763
 242
-production1-input
+activity1-input
 0 2 1
 1
 0
@@ -221,7 +221,7 @@ INPUTBOX
 243
 762
 303
-production2-input
+activity2-input
 0 5 1
 1
 0
@@ -232,7 +232,7 @@ INPUTBOX
 243
 871
 303
-production2-output
+activity2-output
 0 0 10
 1
 0
